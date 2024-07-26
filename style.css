@@ -1,6 +1,6 @@
 @font-face{
     font-family: klavikaMedium;
-    src: url(/font/KlavikaMedium-TF.otf);
+    src: url(/font/KlavikaLight-Plain.otf);
 
     font-family: klavikaRegular;
     src: url(/font/KlavikaRegular-TF.otf);
@@ -10,11 +10,55 @@
     margin: 0;
     padding: 0;
     border: 0;
-    font-family: teste2;
-
 }
 
 :root{
     --bg-primary:#3B5998;
     --bg-secondary: #E7EBF2;
+}
+header{
+    background: var(--bg-primary);
+
+    height: 8vh;
+    padding: 0 20px;
+
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    font-family: KlavikaLight-Italic;
+}
+.logo{
+    font-family: 'klavikaRegular';
+    color: rgb(255, 255, 255);
+    font-size: xx-large;
+}
+
+form.form-login{
+    display: flex;
+    align-items: center;
+    gap: 0 20px;
+}
+.form-login .form-element{
+    display: inline-block;
+}
+.form-login .form-element input{
+    height: 18px;
+}
+.form-login .form-element p{
+    color: white;
+}
+.form-login .form-element a{
+    text-decoration: none;
+    color: #5E78AC;
+}
+.form-element input[type=submit]{
+    cursor: pointer;
+    border: 1px solid #112952;
+    background: #5E78AC;
+    color: white;  
+    padding: 3px 5px; 
+    height: fit-content;
+}
+.form-element input[type=submit]:hover{
+    background: #112952;
 }
