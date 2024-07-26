@@ -1,0 +1,20 @@
+@font-face{
+    font-family: klavikaMedium;
+    src: url(/font/KlavikaMedium-TF.otf);
+
+    font-family: klavikaRegular;
+    src: url(/font/KlavikaRegular-TF.otf);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-family: teste2;
+
+}
+
+:root{
+    --bg-primary:#3B5998;
+    --bg-secondary: #E7EBF2;
+}
