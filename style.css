@@ -11,21 +11,24 @@
     padding: 0;
     border: 0;
 }
-
 :root{
     --bg-primary:#3B5998;
     --bg-secondary: #E7EBF2;
+    --color-primary:#3A66A2;
+}
+body{
+    font-family: KlavikaLight-Italic;
+    background-color: var(--bg-secondary);
 }
 header{
     background: var(--bg-primary);
 
     height: 8vh;
-    padding: 0 20px;
+    padding: 0 400px;
 
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
     align-items: center;
-    font-family: KlavikaLight-Italic;
 }
 .logo{
     font-family: 'klavikaRegular';
@@ -38,19 +41,23 @@ form.form-login{
     align-items: center;
     gap: 0 20px;
 }
+
 .form-login .form-element{
     display: inline-block;
 }
+
 .form-login .form-element input{
     height: 18px;
 }
 .form-login .form-element p{
     color: white;
 }
+
 .form-login .form-element a{
     text-decoration: none;
     color: #5E78AC;
 }
+
 .form-element input[type=submit]{
     cursor: pointer;
     border: 1px solid #112952;
@@ -59,6 +66,126 @@ form.form-login{
     padding: 3px 5px; 
     height: fit-content;
 }
+
 .form-element input[type=submit]:hover{
     background: #112952;
+}
+
+main{
+    display: flex;
+    justify-content: space-between;
+
+    padding: 80px 360px;
+    height: 70vh;
+}
+
+.banner h3{
+    color: var(--color-primary);
+    font-size: xx-large;
+    width: 600px;
+}
+.formulario{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.formulario h2{
+    font-size: 3rem;
+    font-weight: 600;
+}
+
+.formulario h4{
+    font-size: 1.5rem;
+    font-weight: normal;
+}
+
+.formulario input{
+    border: #677285 1px solid;
+    padding: 7px 5px;
+    border-radius: 3px;
+}
+
+.formulario .inline-inputs{
+    display: flex;
+    gap: 10px
+}
+
+.formulario .inline-inputs input{
+    width: 100%;
+}
+
+.form-info h4{
+    font-size: 1.5rem;
+}
+
+.form-data{
+    display: flex;
+}
+
+.form-data .info-nas{
+    color: var(--color-primary);
+    margin-left: 15px;
+    font-size: 12px;
+}
+
+
+.dropdown button{
+    padding: 5px 10px;
+    gap: 15px;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    border: #677285 1px solid;
+}
+
+.options{
+    display: none;
+    border: #677285 1px solid;
+    position: absolute;
+    width: 65px;
+}
+
+.options a{
+    width: 100%;
+    background-color: white;
+}
+
+.options a:hover{
+    background-color: #E7EBF2;
+}
+
+.dropdown:hover .options{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.arrow{
+    position: relative;
+  width: 0;
+  height: 0;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-bottom: 8px solid rgb(114, 114, 114);
+  transform: rotate(180deg);
+}
+
+.checkbox{
+    margin:15px 10px;
+    display: flex;
+    gap: 30px;
+}
+
+.text-links a{
+    color: var(--color-primary);
+}
+
+.teste{
+    background-color: green;
+    width: 70%;
+    padding: 10px 30px;
+    color: white;
+    border-radius: 3px;
+    font-size: 15px;
 }
